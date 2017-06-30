@@ -1,7 +1,7 @@
 package shop_management;
 import behaviours.*;
 
-public class Saxophone extends Instrument implements Playable {
+public class Saxophone extends Instrument implements Playable, Sellable {
 
   private int keys;
 
@@ -17,4 +17,10 @@ public class Saxophone extends Instrument implements Playable {
   public String getType() {
     return this.type;
   }
+
+  public double calculateMarkup() {
+    double margin = sellingPrice - buyingPrice;
+    double markup = (margin * 100) / buyingPrice;
+    return markup;
+}
 }

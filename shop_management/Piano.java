@@ -2,7 +2,7 @@ package shop_management;
 import behaviours.*;
   
 
-public class Piano extends Instrument implements Playable {
+public class Piano extends Instrument implements Playable, Sellable{
   
   private int keys;
   private int legs;
@@ -20,4 +20,10 @@ public class Piano extends Instrument implements Playable {
   public String getName() {
     return this.name;
   }
+
+  public double calculateMarkup() {
+    double margin = sellingPrice - buyingPrice;
+    double markup = (margin * 100) / buyingPrice;
+    return markup;
+}
 }

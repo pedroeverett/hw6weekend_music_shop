@@ -1,7 +1,7 @@
 package shop_management;
 import behaviours.*;
 
-public class Guitar extends Instrument implements Playable {
+public class Guitar extends Instrument implements Playable, Sellable {
  
   private int strings;
   private String typeWood;
@@ -20,4 +20,9 @@ public class Guitar extends Instrument implements Playable {
     return this.typeWood;
   }
 
+  public double calculateMarkup() {
+    double margin = sellingPrice - buyingPrice;
+    double markup = (margin * 100) / buyingPrice;
+    return markup;
+}
 }
