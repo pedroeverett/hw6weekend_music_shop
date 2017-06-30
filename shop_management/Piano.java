@@ -13,7 +13,11 @@ public class Piano implements Playable {
     this.colour = colour;
   }
 
-  public String play(){
+  public String play() {
     return "pin pin pin";
+  }
+
+  public String getName() {
+    return this.name;
   }
 }

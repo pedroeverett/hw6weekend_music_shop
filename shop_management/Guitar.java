@@ -16,4 +16,8 @@ public class Guitar implements Playable {
     return "tin tin tin";
   }
 
+  public String getWood() {
+    return this.wood;
+  }
+
 }

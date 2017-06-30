@@ -16,4 +16,8 @@ public class Saxophone implements Playable {
   public String play() {
     return "fon fon fon";
   }
+
+  public String getType() {
+    return this.type;
+  }
 }
