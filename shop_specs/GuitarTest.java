@@ -8,11 +8,11 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    guitar = new Guitar("Guitar 1", 6, "Mahogany");
+    guitar = new Guitar("Guitar 1", "Wood", "Brown", "Accoustic", 350.00, 600.00, 5, 6, "Mahogany");
   }
 
   @Test
   public void checkWood() {
-    assertEquals("Mahogany", guitar.getWood());
+    assertEquals("Mahogany", guitar.getTypeWood());
   }
 }

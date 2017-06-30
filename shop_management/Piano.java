@@ -2,15 +2,15 @@ package shop_management;
 import behaviours.*;
   
 
-public class Piano implements Playable {
-  private String name;
+public class Piano extends Instrument implements Playable {
+  
   private int keys;
-  private String colour;
+  private int legs;
 
-  public Piano(String name, int keys, String colour){
-    this.name = name;
+  public Piano(String name, String material, String colour, String type, double buyingPrice, double sellingPrice, int stock, int keys, int legs){
+    super(name, material, colour, type, buyingPrice, sellingPrice, stock);
     this.keys = keys;
-    this.colour = colour;
+    this.legs = legs;
   }
 
   public String play() {

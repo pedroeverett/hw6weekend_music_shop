@@ -12,7 +12,7 @@ You will need to:
 
 4. Create a Sellable interface which has a calculateMarkup method, which returns an int/double, based on the buying price and the selling price. 
 
-5. Create classes for items the shop may sell, i.e. which implement the Sellable interface. Such items should have the following:
+5. Create classes for items the shop may sell, i.e. which implement the Sellable interface. Such items should have the following MASTER CLASS ITEMS:
   - a type/description e.g. guitar, drum sticks, guitar strings, sheet music etc.
   - a price at which the shop bought the item.
   - a price at which the shop plans to sell the item.
@@ -22,6 +22,8 @@ You will need to:
 6. Create a Shop class, which has a collection of Sellable items, called stock. In your shop you should be able to:
   -  add items to stock.
   -  remove items from stock.
+  ++++ stock variable
+  ++++ stock array
 
 # Possible Extensions
 

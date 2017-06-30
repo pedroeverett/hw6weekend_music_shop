@@ -1,15 +1,12 @@
 package shop_management;
 import behaviours.*;
 
-public class Saxophone implements Playable {
+public class Saxophone extends Instrument implements Playable {
 
-  private String name;
-  private String type;
   private int keys;
 
-  public Saxophone (String name, String type, int keys) {
-    this.name = name;
-    this.type = type;
+  public Saxophone (String name, String material, String colour, String type, double buyingPrice, double sellingPrice, int stock, int keys) {
+    super(name, material, colour, type, buyingPrice, sellingPrice, stock);
     this.keys = keys;
   }
 

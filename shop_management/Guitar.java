@@ -1,23 +1,23 @@
 package shop_management;
 import behaviours.*;
 
-public class Guitar implements Playable {
-  private String name;
+public class Guitar extends Instrument implements Playable {
+ 
   private int strings;
-  private String wood;
+  private String typeWood;
 
-  public Guitar(String name, int strings, String wood) {
-    this.name = name;
+  public Guitar(String name, String material, String colour, String type, double buyingPrice, double sellingPrice, int stock, int strings, String typeWood) {
+    super(name, material, colour, type, buyingPrice, sellingPrice, stock);
     this.strings = strings;
-    this.wood = wood;
+    this.typeWood = typeWood;
   }
 
   public String play() {
     return "tin tin tin";
   }
 
-  public String getWood() {
-    return this.wood;
+  public String getTypeWood() {
+    return this.typeWood;
   }
 
 }
