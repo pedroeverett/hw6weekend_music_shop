@@ -6,8 +6,8 @@ public class Guitar extends Instrument implements Playable, Sellable {
   private int strings;
   private String typeWood;
 
-  public Guitar(String name, String material, String colour, String type, double buyingPrice, double sellingPrice, int stock, int strings, String typeWood) {
-    super(name, material, colour, type, buyingPrice, sellingPrice, stock);
+  public Guitar(String name, String material, String colour, String type, double buyingPrice, double sellingPrice, int stock, int strings, String typeWood, String description) {
+    super(name, material, colour, type, buyingPrice, sellingPrice, stock, description);
     this.strings = strings;
     this.typeWood = typeWood;
   }
@@ -24,5 +24,5 @@ public class Guitar extends Instrument implements Playable, Sellable {
     double margin = sellingPrice - buyingPrice;
     double markup = (margin * 100) / buyingPrice;
     return markup;
-}
+  }
 }

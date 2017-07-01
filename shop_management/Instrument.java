@@ -8,8 +8,9 @@ public abstract class Instrument {
   protected double buyingPrice;
   protected double sellingPrice;
   protected int stock;
+  protected String description;
 
-  public Instrument(String name, String material, String colour, String type, double buyingPrice, double sellingPrice, int stock) {
+  public Instrument(String name, String material, String colour, String type, double buyingPrice, double sellingPrice, int stock, String description) {
     this.name = name;
     this.material = material;
     this.colour = colour;
@@ -17,5 +18,6 @@ public abstract class Instrument {
     this.buyingPrice = buyingPrice;
     this.sellingPrice = sellingPrice;
     this.stock = stock;
+    this.description = description;
   }
 }
