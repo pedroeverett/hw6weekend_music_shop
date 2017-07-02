@@ -23,7 +23,7 @@ You will need to:
   -  add items to stock.
   -  remove items from stock.
   ++++ stock variable
-  ++++ stock array
+  ++++ stock arraylist
 
 # Possible Extensions
 
