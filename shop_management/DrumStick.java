@@ -13,4 +13,14 @@ public class DrumStick extends Item implements Sellable {
     return markup;
   }
   
+  public double calculateSingleItemProfit() {
+    double profit = sellingPrice - buyingPrice;
+    return profit;
+  }
+
+  public double calculateItemsInStockProfit() {
+    double totalProfit = calculateSingleItemProfit() * stock;
+    return totalProfit;
+  }
+
 }

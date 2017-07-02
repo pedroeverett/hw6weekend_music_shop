@@ -1,6 +1,6 @@
 package shop_management;
 import behaviours.*;
-  
+
 
 public class Piano extends Instrument implements Playable, Sellable{
   
@@ -25,5 +25,15 @@ public class Piano extends Instrument implements Playable, Sellable{
     double margin = sellingPrice - buyingPrice;
     double markup = (margin * 100) / buyingPrice;
     return markup;
-}
+  }
+
+  public double calculateSingleItemProfit() {
+    double profit = sellingPrice - buyingPrice;
+    return profit;
+  }
+
+  public double calculateItemsInStockProfit() {
+    double totalProfit = calculateSingleItemProfit() * stock;
+    return totalProfit;
+  }
 }

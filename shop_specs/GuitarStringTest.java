@@ -15,4 +15,14 @@ public class GuitarStringTest {
   public void checkMarkup() {
     assertEquals(160.00, string.calculateMarkup(), 0.01);
   }
+
+  @Test
+  public void checkSingleItemProfit() {
+    assertEquals(4.00, string.calculateSingleItemProfit(), 0.01);
+  }
+
+  @Test
+  public void checkItemsInStockProfit() {
+    assertEquals(240.00, string.calculateItemsInStockProfit(), 0.01);
+  }
 }

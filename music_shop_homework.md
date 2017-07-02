@@ -35,7 +35,9 @@ You will need to:
 
 #5. create a method to calculate profit buy units in stock for each item. Also the stock for each item.
 
-#6. create a delete by name method. (if in a for??)
+#6 calculate average profit
+
+#7. create a delete by name method. (if in a for??)
 
 ## Remember
 Use TDD, with separate test files for each class. 

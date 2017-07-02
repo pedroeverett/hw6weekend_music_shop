@@ -12,5 +12,15 @@ public class GuitarString extends Item implements Sellable {
     double markup = (margin * 100) / buyingPrice;
     return markup;
   }
-  
+
+  public double calculateSingleItemProfit() {
+    double profit = sellingPrice - buyingPrice;
+    return profit;
+  }
+
+  public double calculateItemsInStockProfit() {
+    double totalProfit = calculateSingleItemProfit() * stock;
+    return totalProfit;
+  }
+
 }

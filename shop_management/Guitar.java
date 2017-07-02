@@ -25,4 +25,14 @@ public class Guitar extends Instrument implements Playable, Sellable {
     double markup = (margin * 100) / buyingPrice;
     return markup;
   }
+  
+  public double calculateSingleItemProfit() {
+    double profit = sellingPrice - buyingPrice;
+    return profit;
+  }
+
+  public double calculateItemsInStockProfit() {
+    double totalProfit = calculateSingleItemProfit() * stock;
+    return totalProfit;
+  }
 }
