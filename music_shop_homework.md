@@ -31,6 +31,14 @@ You will need to:
 2. Create and use an enum for instrument types e.g. keyboard, wind, brass etc
 3. Any other extensions you may wish to add.
 
+#4. created profit method on sellable items and create method for sum the total of the profit
+
+#5. create a method to calculate profit buy units in stock for each item. Also the stock for each item.
+
+#6. create a delete by name method. (if in a for??)
+
 ## Remember
 Use TDD, with separate test files for each class. 
+
+
 

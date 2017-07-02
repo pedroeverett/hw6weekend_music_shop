@@ -29,4 +29,12 @@ public class Shop {
     }
     return null;
   }
+
+  public double totalMarkup() {
+    double total = 0 ;
+    for ( Sellable item : this.stock ) {
+      total += item.calculateMarkup();
+    }
+    return total;
+  }
 }
