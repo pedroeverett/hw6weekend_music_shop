@@ -26,6 +26,7 @@ public class ShopTest {
     // piano total units profit 20000
     saxophone = new Saxophone("Saxophone 1", "Tin", "Golden", InstrumentType.WIND, 150.00, 250.00, 15, 23, "Lovely Saxophone");
     sheet = new SheetMusic("Music Sheet 1", "Let It Be Music Sheet", 35, 3.00, 6.00);
+    // sheet markup 100
   }
 
   @Test
@@ -55,10 +56,19 @@ public class ShopTest {
   }
 
   @Test
+  public void checkAverageMarkup() {
+    shop.addStock(guitar);
+    shop.addStock(piano);
+    shop.addStock(sheet);
+    assertEquals(93.33, shop.averageMarkup(), 0.01);
+  }
+
+  @Test
   public void checkTotalProfitMoney() {
     shop.addStock(guitar);
     shop.addStock(piano);
     assertEquals(21400.00, shop.totalProfit(), 0.01);
   }
+
 
 }

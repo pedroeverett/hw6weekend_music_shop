@@ -38,6 +38,16 @@ public class Shop {
     return total;
   }
 
+  public double averageMarkup() {
+    double total = 0;
+    int counter = 0;
+    for (Sellable item : this.stock) {
+      total += item.calculateMarkup();
+      counter ++;
+    }
+    return total / counter;
+  }
+
   public double totalProfit() {
     double total = 0;
     for (Sellable item : this.stock)  {
