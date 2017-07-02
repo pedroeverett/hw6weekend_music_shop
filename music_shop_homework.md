@@ -35,7 +35,7 @@ You will need to:
 
 #5. create a method to calculate profit buy units in stock for each item. Also the stock for each item.
 
-#6 calculate average profit
+#6 calculate average markup
 
 #7. create a delete by name method. (if in a for??)
 

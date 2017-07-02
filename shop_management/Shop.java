@@ -30,6 +30,14 @@ public class Shop {
     return null;
   }
 
+  public Integer removeStockByName(Sellable item) {
+    if (itemCount() >0) {
+      stock.remove(item);
+      return itemCount();
+    }
+    return null;
+  }
+
   public double totalMarkup() {
     double total = 0;
     for ( Sellable item : this.stock ) {

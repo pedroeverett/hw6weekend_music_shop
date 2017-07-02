@@ -49,6 +49,15 @@ public class ShopTest {
   }
 
   @Test
+  public void canRemoveFromStockByName() {
+    shop.addStock(guitar);
+    shop.addStock(piano);
+    shop.addStock(string);
+    shop.removeStockByName(piano);
+    assertEquals(2, shop.itemCount());
+  }
+
+  @Test
   public void checkTotalProfitMarkup() {
     shop.addStock(guitar);
     shop.addStock(piano);
