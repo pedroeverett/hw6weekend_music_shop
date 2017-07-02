@@ -19,4 +19,14 @@ public class Shop {
   public void addStock(Sellable item) {
     this.stock.add(item);
   }
+
+  public Integer removeStock() {
+    if (itemCount() > 0) {
+      stock.remove(0);
+      // int level = this.stock.size();
+      // return level;
+      return itemCount();
+    }
+    return null;
+  }
 }
