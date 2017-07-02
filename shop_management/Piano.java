@@ -7,7 +7,7 @@ public class Piano extends Instrument implements Playable, Sellable{
   private int keys;
   private int legs;
 
-  public Piano(String name, String material, String colour, String type, double buyingPrice, double sellingPrice, int stock, int keys, int legs, String description){
+  public Piano(String name, String material, String colour, InstrumentType type, double buyingPrice, double sellingPrice, int stock, int keys, int legs, String description){
     super(name, material, colour, type, buyingPrice, sellingPrice, stock, description);
     this.keys = keys;
     this.legs = legs;

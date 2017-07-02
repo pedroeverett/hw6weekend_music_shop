@@ -8,11 +8,11 @@ public class SaxophoneTest {
 
   @Before
   public void before() {
-    saxophone = new Saxophone("Saxophone 1", "Tin", "Golden", "Bass", 150.00, 250.00, 15, 23, "Lovely Saxophone");
+    saxophone = new Saxophone("Saxophone 1", "Tin", "Golden", InstrumentType.WIND, 150.00, 250.00, 15, 23, "Lovely Saxophone");
   }
 
   @Test
   public void checkType() {
-    assertEquals("Bass", saxophone.getType());
+    assertEquals(InstrumentType.WIND, saxophone.getType());
   }
 }
